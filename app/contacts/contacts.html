@@ -1,0 +1,8 @@
+<div ng-controller="ContactsCtrl as ctrl">
+  <h1>Contact Tree</h1>
+  <ul>
+    <li ng-repeat="contact in ctrl.contacts"
+        ng-include="'contacts/contact.html'"
+        ng-click="ctrl.contactClick($event, contact)"></li>
+  </ul>
+</div>

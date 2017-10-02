@@ -1,0 +1,6 @@
+{{contact.name}}
+<ul ng-if="contact.showSubContacts">
+    <li ng-repeat="contact in contact.contacts"
+        ng-include="'contacts/contact.html'"
+        ng-click="ctrl.contactClick($event, contact)"></li>
+</ul>
